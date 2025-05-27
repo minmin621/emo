@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: php-emotion-analyzer
+    env: docker
+    plan: free
+    buildCommand: "./.render-build.sh"
+    startCommand: "php -S 0.0.0.0:10000"
